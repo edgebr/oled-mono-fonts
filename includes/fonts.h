@@ -5,7 +5,7 @@
  * @version 0.1
  * @date 22-05-2023
  *
- * @copyright Copyright (c) 2023
+ * @copyright Copyright (c) 2023, Centro de Inovação EDGE
  *
  */
 
@@ -14,7 +14,6 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <stdio.h>
 
 /**
  * @defgroup fonts Fontes.

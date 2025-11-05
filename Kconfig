@@ -1,0 +1,5 @@
+# Copyright (c) 2025, Centro de Inovação Edge.
+# SPDX-License-Identifier: BSD-3-Clause
+
+config OLED_FONTS
+    bool "OLED 5x7px and 7x10px fonts"
