@@ -1,7 +1,7 @@
 # Copyright (c) 2025, Centro de Inovação Edge.
 # SPDX-License-Identifier: BSD-3-Clause
 
-name: fonts
+name: oled_fonts
 build:
   cmake: .
   kconfig: Kconfig

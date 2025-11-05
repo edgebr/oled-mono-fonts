@@ -24,8 +24,12 @@
  * @brief Enumera as fontes.
  */
 enum font_sizes {
-  FONT_SIZE_7 = 0, /**< Fonte 5x7. */
+#if defined(CONFIG_OLED_FONT_5x7)
+  FONT_SIZE_7, /**< Fonte 5x7. */
+#endif
+#if defined(CONFIG_OLED_FONT_7x10)
   FONT_SIZE_10,    /**< Fonte 8x10. */
+#endif
 
   FONT_AMOUNT, /**< Número de fontes. */
 };
