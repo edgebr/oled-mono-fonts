@@ -5,5 +5,11 @@ menuconfig OLED_FONTS
     bool "OLED Fonts"
 
 if OLED_FONTS
-    rsource "fonts/Kconfig"
+    config OLED_FONT_5x7
+        bool "ASCII 5x7px default font."
+        default y
+
+    config OLED_FONT_7x10
+        bool "ASCII 7x10px default font."
+        default y
 endif
