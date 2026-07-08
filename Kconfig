@@ -16,7 +16,7 @@ menuconfig OLED_FONTS
 
 choice
     prompt "Select a font to use"
-    default CONFIG_FONT_DEFAULT
+    default FONT_DEFAULT
     depends on OLED_FONTS
 
     config FONT_DEFAULT
