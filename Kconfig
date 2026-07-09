@@ -1,15 +1,24 @@
-# Copyright (c) 2025, Centro de Inovação Edge.
+# Copyright (c) 2026, Centro de Inovação Edge.
 # SPDX-License-Identifier: BSD-3-Clause
 
 menuconfig OLED_FONTS
     bool "OLED Fonts"
 
-if OLED_FONTS
     config OLED_FONT_5x7
         bool "ASCII 5x7px default font."
         default y
+        depends on OLED_FONTS
 
     config OLED_FONT_7x10
         bool "ASCII 7x10px default font."
         default y
-endif
+        depends on OLED_FONTS
+
+choice
+    prompt "Select a font to use"
+    default FONT_DEFAULT
+    depends on OLED_FONTS
+
+    config FONT_DEFAULT
+        bool "Default font"
+endchoice

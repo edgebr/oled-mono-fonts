@@ -1,5 +1,5 @@
 /**
- * @file fonts.c
+ * @file default_font.c
  * @author Paulo Santos (pauloroberto.santos@edge.ufal.br)
  * @brief Declaração das fontes.
  * @version 0.1
